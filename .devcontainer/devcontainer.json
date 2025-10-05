@@ -1,0 +1,36 @@
+// .devcontainer/devcontainer.json
+{
+    "name": "miakksHP",
+    // 以前作成したDockerfileを参照
+    "build": {
+        "dockerfile": "../Dockerfile",
+        // DockerfileのARGを参照（設定していない場合は省略可能）
+        "args": {
+            "USERNAME": "node"
+        }
+    },
+    // VS Codeが開くディレクトリをコンテナ内の/appに設定
+    "workspaceFolder": "/app",
+    // コンテナ起動後に自動で開きたいポートを設定
+    "forwardPorts": [
+        3000
+    ],
+    // コンテナ内で使用したいVS Code拡張機能を指定
+    "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "vscode-icons-team.vscode-icons",
+        "dsznajder.es7-react-js-snippets",
+        "bradlc.vscode-tailwindcss",
+        "stylelint.vscode-stylelint"
+    ],
+    // 開発中にホストPCのファイルをコンテナにマウントする設定
+    // これにより、ホスト側のVS Codeで編集したコードがコンテナに即座に反映されます。
+    // Dockerfileでインストールされたnode_modulesの上書きを防ぐため、ボリュームマウントを推奨
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/app,type=bind",
+        "source=node_modules_volume-${devcontainerId},target=/app/node_modules,type=volume"
+    ],
+    // コンテナ内でターミナルを開くユーザーを指定
+    "remoteUser": "node"
+}
