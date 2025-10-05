@@ -1,0 +1,9 @@
+# .dockerignore
+
+# 依存関係はDockerfile内でインストールするため、含めない
+node_modules
+# Git関連のメタデータ
+.git
+# ローカルキャッシュディレクトリ
+.next
+.vscode
