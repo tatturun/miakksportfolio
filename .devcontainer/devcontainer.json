@@ -12,9 +12,7 @@
     // VS Codeが開くディレクトリをコンテナ内の/appに設定
     "workspaceFolder": "/app",
     // コンテナ起動後に自動で開きたいポートを設定
-    "forwardPorts": [
-        3000
-    ],
+    "forwardPorts": [3000],
     // コンテナ内で使用したいVS Code拡張機能を指定
     "extensions": [
         "dbaeumer.vscode-eslint",
@@ -29,8 +27,13 @@
     // Dockerfileでインストールされたnode_modulesの上書きを防ぐため、ボリュームマウントを推奨
     "mounts": [
         "source=${localWorkspaceFolder},target=/app,type=bind",
-        "source=node_modules_volume-${devcontainerId},target=/app/node_modules,type=volume"
+        "source=node_modules_cache,target=/app/node_modules,type=volume"
     ],
+    // ここを追加：開発環境の環境変数を設定
+    "remoteEnv": {
+        // Next.jsにポーリング（一定間隔でのファイルチェック）を強制する
+        "NEXT_PUBLIC_CHOKIDAR_WATCHER_USEPOLLING": "true"
+    },
     // コンテナ内でターミナルを開くユーザーを指定
     "remoteUser": "node"
 }
