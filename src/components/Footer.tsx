@@ -63,7 +63,7 @@ const Footer = () => {
                     <div className="h-36 w-px bg-stone-400 hidden md:block"></div>
 
                     {/* 2×2 ボタン */}
-                    <div className="grid grid-cols-2 gap-2 hidden md:grid">
+                    <div className="grid-cols-2 gap-2 hidden md:grid">
                         {FOOTER_LINKS.map((link) => (
                             <Link
                                 key={link.name}
