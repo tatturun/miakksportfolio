@@ -5,7 +5,7 @@ export default function HomePage() {
     return (
         <div className={styles.container}>
             <header className={styles.header}>
-                <h1 className={styles.title}>ようこそ、私のポートフォリオへ</h1>
+                <h1 className={styles.title}>ようこそ</h1>
                 <p className={styles.description}>
                     ここでは私の制作物やメンバーを紹介しています。
                 </p>
