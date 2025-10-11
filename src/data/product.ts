@@ -43,9 +43,17 @@ export const products: Product[] = [
         abstract: "詳細",
         description: [],
         icon: "images/products/window.svg",
-        logo: "",
-        images: [],
-        techIcons: [],
+        logo: "/images/products/window.svg",
+        images: [
+            "images/products/window.svg",
+            "images/products/window.svg",
+            "images/products/window.svg",
+        ],
+        techIcons: [
+            "images/techIcons/github-mark.svg",
+            "images/techIcons/github-mark.svg",
+            "images/techIcons/github-mark.svg",
+        ],
     },
     {
         slug: "product-c",
@@ -55,9 +63,17 @@ export const products: Product[] = [
         abstract: "詳細",
         description: [],
         icon: "images/products/window.svg",
-        logo: "",
-        images: [],
-        techIcons: [],
+        logo: "/images/products/window.svg",
+        images: [
+            "images/products/window.svg",
+            "images/products/window.svg",
+            "images/products/window.svg",
+        ],
+        techIcons: [
+            "images/techIcons/github-mark.svg",
+            "images/techIcons/github-mark.svg",
+            "images/techIcons/github-mark.svg",
+        ],
     },
     {
         slug: "product-d",
@@ -67,9 +83,17 @@ export const products: Product[] = [
         abstract: "詳細",
         description: [],
         icon: "images/products/window.svg",
-        logo: "",
-        images: [],
-        techIcons: [],
+        logo: "/images/products/window.svg",
+        images: [
+            "images/products/window.svg",
+            "images/products/window.svg",
+            "images/products/window.svg",
+        ],
+        techIcons: [
+            "images/techIcons/github-mark.svg",
+            "images/techIcons/github-mark.svg",
+            "images/techIcons/github-mark.svg",
+        ],
     },
     {
         slug: "product-e",
@@ -79,8 +103,16 @@ export const products: Product[] = [
         abstract: "詳細",
         description: [],
         icon: "images/products/window.svg",
-        logo: "",
-        images: [],
-        techIcons: [],
+        logo: "/images/products/window.svg",
+        images: [
+            "images/products/window.svg",
+            "images/products/window.svg",
+            "images/products/window.svg",
+        ],
+        techIcons: [
+            "images/techIcons/github-mark.svg",
+            "images/techIcons/github-mark.svg",
+            "images/techIcons/github-mark.svg",
+        ],
     },
 ];
