@@ -21,18 +21,8 @@ export default function ProductsPage() {
 
             {/* メインコンテンツコンテナ */}
             <div className="flex w-full max-w-7xl h-[80vh] gap-8 mb-16">
-                {/* プロダクトトップ (右側) */}
-                <div className="w-3/4 overflow-y-auto p-4">
-                    {selectedProduct && (
-                        <ProductTop product={selectedProduct} />
-                    )}
-                </div>
-
-                {/* パーテーション */}
-                <div className="w-px bg-slate-300"></div>
-
-                {/* プロダクトカードリスト (左側) */}
-                <div className="w-1/4 overflow-y-auto m-4 flex flex-col items-center space-y-4">
+                {/* プロダクトカードリスト (モバイルでは上部・横並び、デスクトップでは左側・縦並び) */}
+                <div className="w-full md:w-1/4 overflow-x-auto md:overflow-y-auto flex flex-row md:flex-col items-center md:items-start space-x-4 md:space-x-0 md:space-y-4 p-4">
                     {products.map((product) => (
                         <div
                             key={product.slug}
@@ -42,6 +32,16 @@ export default function ProductsPage() {
                             <ProductCard product={product} />
                         </div>
                     ))}
+                </div>
+
+                {/* パーテーション */}
+                <div className="w-px bg-slate-300"></div>
+
+                {/* プロダクトトップ (右側) */}
+                <div className="w-3/4 overflow-y-auto pb-4">
+                    {selectedProduct && (
+                        <ProductTop product={selectedProduct} />
+                    )}
                 </div>
             </div>
         </div>

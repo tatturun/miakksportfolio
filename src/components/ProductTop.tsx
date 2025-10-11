@@ -10,7 +10,7 @@ interface Props {
 
 export default function ProductTop({ product }: Props) {
     return (
-        <div className="flex flex-col items-center p-8 gap-8 w-full">
+        <div className="flex flex-col items-center px-8 pb-4 gap-8 w-full">
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full">
                 {/* 画像リスト (左側) */}
                 <div className="w-full md:w-1/2 flex space-x-4 overflow-x-auto p-4 snap-x snap-mandatory">
@@ -33,7 +33,7 @@ export default function ProductTop({ product }: Props) {
 
                 {/* テキストセクション (右側) */}
                 <div className="w-full md:w-1/2 flex flex-col items-start p-4">
-                    <h2 className="text-4xl font-bold text-slate-900 mb-4">
+                    <h2 className="whitespace-pre-wrap text-4xl font-bold text-slate-900 mb-4">
                         {product.name}
                     </h2>
                     <p className="text-slate-800 mb-6">{product.concept}</p>
@@ -46,7 +46,9 @@ export default function ProductTop({ product }: Props) {
             </div>
             {/* テキストセクション */}
             <div className="w-full p-4">
-                <p className="text-slate-800">{product.abstract}</p>
+                <p className="whitespace-pre-wrap text-slate-800">
+                    {product.abstract}
+                </p>
             </div>
         </div>
     );

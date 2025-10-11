@@ -13,10 +13,10 @@ export type Product = {
 export const products: Product[] = [
     {
         slug: "product-a",
-        name: "アイオライト アドバンスド",
+        name: "アイオライト\nアドバンス",
         concept: "あなた専用のAI家庭教師",
         abstract:
-            "Open Hack U 2025 OSAKA にて制作．<br>技育博 2025 Vol.2 にて、<br>株式会社 サイバーエージェント 賞  受賞<br>株式会社 CARTA HOLDINGS 賞  受賞",
+            "Open Hack U 2025 OSAKA にて制作．\n技育博 2025 Vol.2 にて、株式会社 サイバーエージェント 賞  受賞，株式会社 CARTA HOLDINGS 賞  受賞",
         description: [],
         imageUrl: "/images/products/window.svg",
         images: [

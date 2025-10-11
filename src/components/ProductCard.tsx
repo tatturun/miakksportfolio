@@ -9,9 +9,11 @@ type Props = {
 
 export default function ProductCard({ product }: Props) {
     return (
-        <div className="flex flex-col items-center justify-center text-center m-4">
+        <div className="flex flex-col items-center justify-center text-center px-3">
             <p className="text-3l text-center">{product.concept}</p>
-            <h3 className="text-2xl text-center mb-4">{product.name}</h3>
+            <h3 className="whitespace-pre-wrap text-2xl text-center mb-1">
+                {product.name}
+            </h3>
             <Image
                 src={product.imageUrl}
                 alt={product.name}
