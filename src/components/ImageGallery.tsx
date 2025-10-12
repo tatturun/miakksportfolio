@@ -28,12 +28,12 @@ export default function ImageGallery({ product }: Props) {
 
     return (
         <div className="w-full md:w-2/5 relative">
-            <div className="relative w-full h-[250px] mx-auto overflow-hidden">
+            <div className="relative w-full min-h-[500px] mx-auto overflow-hidden">
                 <Image
                     src={product.images[currentIndex]}
                     alt={`${product.name} の画像 ${currentIndex + 1}`}
                     fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    sizes="100vw, 50vw, 33vw"
                     style={{
                         objectFit: "contain",
                         width: "100%",

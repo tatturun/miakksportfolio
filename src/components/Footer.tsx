@@ -15,8 +15,8 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="py-12 px-4 bg-stone-50/70">
-            <div className="container mx-auto text-center text-stone-600 flex justify-center items-center">
+        <footer className="py-12 px-4 bg-slate-50/70">
+            <div className="container mx-auto text-center text-slate-800 flex justify-center items-center">
                 <div className="flex justify-center items-center space-x-4">
                     <div className="flex flex-col items-start space-y-2">
                         <div className="flex items-center space-x-4">
@@ -43,14 +43,14 @@ const Footer = () => {
                         </div>
                         <div className="flex space-x-4">
                             {/* テキスト */}
-                            <p className="text-lg text-gray-800">
+                            <p className="text-lg text-slate-800">
                                 お問い合わせはこちらから
                             </p>
 
                             {/* コンタクトボタン */}
                             <Link
                                 href="https://forms.gle/M95HJP6oA58meBSBA"
-                                className="px-8 py-1 border border-black rounded-full text-black hover:bg-gray-100 transition-colors duration-200 flex items-center"
+                                className="px-8 py-1 border border-black rounded-full text-black hover:bg-slate-100 transition-colors duration-200 flex items-center"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -60,7 +60,7 @@ const Footer = () => {
                     </div>
 
                     {/* 縦棒 */}
-                    <div className="h-36 w-px bg-stone-400 hidden md:block"></div>
+                    <div className="h-36 w-px bg-slate-400 hidden md:block"></div>
 
                     {/* 2×2 ボタン */}
                     <div className="grid-cols-2 gap-2 hidden md:grid">
@@ -68,7 +68,7 @@ const Footer = () => {
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className="w-full text-center px-4 py-2 text-stone-700 rounded-md hover:bg-stone-300 transition-colors duration-200"
+                                className="w-full text-center px-4 py-2 text-slate-800 rounded-md hover:bg-slate-300 transition-colors duration-200"
                             >
                                 {link.name}
                             </Link>
