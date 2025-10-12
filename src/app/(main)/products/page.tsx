@@ -2,7 +2,10 @@
 
 import { products, Product } from "@/data/product";
 import ProductCard from "@/components/ProductCard";
-import ProductTop from "@/components/ProductTop";
+import ImageGallery from "@/components/ImageGallery";
+import ProductInfo from "@/components/ProductInfo";
+import ProductDetailsButton from "@/components/ProductDetailsButton";
+import ProductAbstract from "@/components/ProductAbstract";
 import { useState } from "react";
 
 export default function ProductsPage() {
@@ -37,10 +40,21 @@ export default function ProductsPage() {
                 {/* パーテーション */}
                 <div className="hidden md:block w-px bg-slate-100 self-stretch"></div>
 
-                {/* プロダクトトップ (右側) */}
+                {/* プロダクト概要 (右側) */}
                 <div className="w-full md:w-3/4 overflow-y-auto pb-4">
                     {selectedProduct && (
-                        <ProductTop product={selectedProduct} />
+                        <div className="flex flex-col items-center px-8 pb-4 gap-8 w-full">
+                            <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full">
+                                <ImageGallery product={selectedProduct} />
+
+                                {/* パーテーション */}
+                                <div className="hidden md:block w-px bg-slate-100 self-stretch"></div>
+
+                                <ProductInfo product={selectedProduct} />
+                            </div>
+                            <ProductAbstract product={selectedProduct} />
+                            <ProductDetailsButton product={selectedProduct} />
+                        </div>
                     )}
                 </div>
             </div>
