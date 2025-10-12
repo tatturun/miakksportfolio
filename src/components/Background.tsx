@@ -6,43 +6,43 @@ export const Background = () => {
             color: "#e7336e",
             delay: "0s",
             duration: "6s",
-            left: "10%",
-            top: "40%",
+            left: "10vw",
+            top: "40vh",
         }, // M
         {
             color: "#66bf97",
             delay: "1s",
             duration: "7s",
-            left: "25%",
-            top: "70%",
+            left: "25vw",
+            top: "70vh",
         }, // i
         {
             color: "#856daf",
             delay: "2s",
             duration: "5s",
-            left: "40%",
-            top: "50%",
+            left: "40vw",
+            top: "50vh",
         }, // a
         {
             color: "#ffe450",
             delay: "3s",
             duration: "8s",
-            left: "55%",
-            top: "80%",
+            left: "55vw",
+            top: "80vh",
         }, // k
         {
             color: "#6bc8f2",
             delay: "4s",
             duration: "6s",
-            left: "70%",
-            top: "30%",
+            left: "70vw",
+            top: "30vh",
         }, // k
         {
             color: "#f8b217",
             delay: "5s",
             duration: "7s",
-            left: "85%",
-            top: "60%",
+            left: "85vw",
+            top: "60vh",
         }, // s
     ];
 
