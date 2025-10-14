@@ -4,6 +4,7 @@ import { products } from "@/data/product";
 import { notFound } from "next/navigation";
 import SampleDescription from "@/app/(main)/products/descriptions/Sample";
 import AIoLite_AdvanceDescription from "../descriptions/AIoLite_Advanced";
+import SustainableHoneybeesParkProjectWebDescription from "@/app/(main)/products/descriptions/sustainable_honeybees_park_project_web";
 
 type Props = {
     params: {
@@ -32,6 +33,8 @@ export default async function ProductDetailPage({ params }: Props) {
             return <SampleDescription product={product} />;
         case "AIoLite_Advance":
             return <AIoLite_AdvanceDescription product={product} />;
+        case "sustainable_honeybees_park_project_web":
+            return <SustainableHoneybeesParkProjectWebDescription product={product} />;
         // 他のケースを追加
         default:
             return <div>このプロダクトの詳細ページはまだありません。</div>;

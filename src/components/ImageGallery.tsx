@@ -27,7 +27,7 @@ export default function ImageGallery({ product }: Props) {
     };
 
     return (
-        <div className="w-full md:w-2/5 relative">
+        <div className="w-full flex justify-center items-center relative px-10 md:px-8">
             <div className="relative w-full min-h-[500px] mx-auto overflow-hidden">
                 <Image
                     src={product.images[currentIndex]}
