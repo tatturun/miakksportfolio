@@ -3,6 +3,8 @@
 import { products } from "@/data/product";
 import { notFound } from "next/navigation";
 import SampleDescription from "@/app/(main)/products/descriptions/Sample";
+import SustainableHoneybeesParkProjectWebDescription from "@/app/(main)/products/descriptions/sustainable_honeybees_park_project_web";
+
 
 type Props = {
     params: {
@@ -29,6 +31,8 @@ export default async function ProductDetailPage({ params }: Props) {
     switch (product.slug) {
         case "Sample":
             return <SampleDescription product={product} />;
+        case "sustainable_honeybees_park_project_web":
+            return <SustainableHoneybeesParkProjectWebDescription product={product} />;
         // 他のケースを追加
         default:
             return <div>このプロダクトの詳細ページはまだありません。</div>;
