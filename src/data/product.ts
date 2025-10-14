@@ -5,7 +5,11 @@ export type Product = {
     genre: string; // 対応機種等
     concept: string; // プロダクトのコンセプト（一言で）
     abstract: string; // プロダクトの概要（一覧，個別プロダクトページの最上に表示）
-    description: { index: string; body: string, link?: { url: string; text: string; }; }[]; // プロダクトの詳細（個別プロダクトページにのみ表示）
+    description: {
+        index: string;
+        body: string;
+        link?: { url: string; text: string };
+    }[]; // プロダクトの詳細（個別プロダクトページにのみ表示）
     icon: string; // アイコン（正方形）
     logo: string; // ロゴ（横長想定）
     images: string[]; // 画像リスト（一覧，個別プロダクトページの最上に表示）
@@ -64,8 +68,10 @@ export const products: Product[] = [
         slug: "AIoLite_Advance",
         name: "アイオライト アドバンス",
         genre: "iOS Android",
-        concept: "いつでも、どこでも、気軽に質問できる「あなた専用のAI家庭教師」",
-        abstract: "いつでもどこでも気軽に質問できる「あなた専用のAI家庭教師『AIoLite』」。あなたが答えを出せるようAI家庭教師が導きます。質問後にはあなたにぴったりの類題も提示します。",
+        concept:
+            "いつでも、どこでも、気軽に質問できる「あなた専用のAI家庭教師」",
+        abstract:
+            "いつでもどこでも気軽に質問できる「あなた専用のAI家庭教師『AIoLite』」。あなたが答えを出せるようAI家庭教師が導きます。質問後にはあなたにぴったりの類題も提示します。",
         description: [
             {
                 index: "1 「解くだけ」にしない",
@@ -94,7 +100,6 @@ export const products: Product[] = [
             "/images/products/AIoLite_Advance/Feedback.PNG",
             "/images/products/AIoLite_Advance/SameQ.PNG",
             "/images/products/AIoLite_Advance/Total.PNG",
-
         ],
         techIcons: [
             "/images/techIcons/Flutter.png",
@@ -103,7 +108,7 @@ export const products: Product[] = [
             "/images/techIcons/Pinecone.webp",
             "/images/techIcons/python.png",
             "/images/techIcons/SQLite.png",
-            "/images/techIcons/FastAPI.svg",
+            "/images/techIcons/fastapi.svg",
         ],
     },
     {
@@ -165,32 +170,36 @@ export const products: Product[] = [
         description: [
             {
                 index: "🌿サステナハニー公園プロジェクトとは",
-                body: "サステナハニー公園プロジェクトとは、環境教育と地域貢献を通じて持続可能な社会を目指す取り組みです。\n\n" +
+                body:
+                    "サステナハニー公園プロジェクトとは、環境教育と地域貢献を通じて持続可能な社会を目指す取り組みです。\n\n" +
                     "この活動の一環として、名城大学の学生主体のコミュニティであるチーム「VISION GUILD（VG)」と「もじもじ」が、プロジェクトの理念を伝える「サステナ看板」を制作しました。この看板は、多様な人々がプロジェクトに関心を持つきっかけとなることを目指しています。\n\n" +
-                    "しかし、この一枚の看板アートには、ただ見るだけでは伝わりきらない――制作者の繊細な想いと物語 が込められていました。\n\n" + 
+                    "しかし、この一枚の看板アートには、ただ見るだけでは伝わりきらない――制作者の繊細な想いと物語 が込められていました。\n\n" +
                     "その物語を“語り部”として伝えるために、Webサイトを制作したのが私たち Miakks です。",
             },
             {
                 index: "💡Webを通じて社会とつながる挑戦",
-                body: "\n私たちは「実践主義。」を理念に掲げ、大学で学んだプログラミング技術を現実の課題解決に活かすことを目指しています。今回のWebサイト制作は、学内で得た知識を社会に還元し、より多くの人々に想いを届けるための挑戦でした。\n\n" + 
-                "サステナハニー公園プロジェクトに関わる人々の情熱や、看板に込められた想いを正しく、そして温かく伝えること。それが、私たちがこのWebサイトを制作した最大の目的です。\n\n" + 
-                "また、Webという形を通じて、活動の魅力を広く発信し、環境や地域への関心を持つきっかけをつくることも目指しました。私たちにとってこのプロジェクトは、“技術で社会とつながるという理念を形にした実践の一歩です。",
+                body:
+                    "\n私たちは「実践主義。」を理念に掲げ、大学で学んだプログラミング技術を現実の課題解決に活かすことを目指しています。今回のWebサイト制作は、学内で得た知識を社会に還元し、より多くの人々に想いを届けるための挑戦でした。\n\n" +
+                    "サステナハニー公園プロジェクトに関わる人々の情熱や、看板に込められた想いを正しく、そして温かく伝えること。それが、私たちがこのWebサイトを制作した最大の目的です。\n\n" +
+                    "また、Webという形を通じて、活動の魅力を広く発信し、環境や地域への関心を持つきっかけをつくることも目指しました。私たちにとってこのプロジェクトは、“技術で社会とつながるという理念を形にした実践の一歩です。",
             },
             {
                 index: "🌱経験と学び",
-                body: "\nこのプロジェクトは、私たちにとって非常に貴重な実践の場となりました。自分たちのアイデアを自由に形にするコンテストや授業とは異なり、今回は既に進行している活動に参加し、他の団体と協力しながら一つの成果物を完成させる必要がありました。これは技術力だけでは乗り越えられない挑戦でした。\n\n" + 
-                "制作の過程では、デザインの意図や想いを正確に伝えるための表現方法を模索しました。単に「Webサイトをつくる」という作業ではなく、「伝える責任を持つ制作」であることを強く意識して作成をしました。\n\n" + 
-                "この経験を通じて、私たちは単なる制作者ではなく、プロジェクトを共に創り上げる一員としての責任と喜びを学びました。",
+                body:
+                    "\nこのプロジェクトは、私たちにとって非常に貴重な実践の場となりました。自分たちのアイデアを自由に形にするコンテストや授業とは異なり、今回は既に進行している活動に参加し、他の団体と協力しながら一つの成果物を完成させる必要がありました。これは技術力だけでは乗り越えられない挑戦でした。\n\n" +
+                    "制作の過程では、デザインの意図や想いを正確に伝えるための表現方法を模索しました。単に「Webサイトをつくる」という作業ではなく、「伝える責任を持つ制作」であることを強く意識して作成をしました。\n\n" +
+                    "この経験を通じて、私たちは単なる制作者ではなく、プロジェクトを共に創り上げる一員としての責任と喜びを学びました。",
             },
             {
                 index: "✨おわりに",
-                body: "\n私たちMiakksにとって、このプロジェクトは技術を使って社会と向き合う貴重な一歩でした。制作を通じて感じた「想いを届けることの難しさ」は、これからの活動にも生きていく学びです。\n\n" + 
-                "このページが、「サステナハニー公園プロジェクト」の魅力を一人でも多くの方に届き、皆さまがアートの世界に深く触れるきっかけとなることを、心から願っています。ぜひ、Webサイトを通してプロジェクトの物語を感じてみてください。\n\n" + 
-                "詳しくはコチラ👇", 
+                body:
+                    "\n私たちMiakksにとって、このプロジェクトは技術を使って社会と向き合う貴重な一歩でした。制作を通じて感じた「想いを届けることの難しさ」は、これからの活動にも生きていく学びです。\n\n" +
+                    "このページが、「サステナハニー公園プロジェクト」の魅力を一人でも多くの方に届き、皆さまがアートの世界に深く触れるきっかけとなることを、心から願っています。ぜひ、Webサイトを通してプロジェクトの物語を感じてみてください。\n\n" +
+                    "詳しくはコチラ👇",
                 link: {
                     url: "https://sustainable-honeybees-park-project.pages.dev",
-                    text: "https://sustainable-honeybees-park-project.pages.dev"
-            },
+                    text: "https://sustainable-honeybees-park-project.pages.dev",
+                },
             },
         ],
         icon: "/images/products/Sustainable_honeybees_park_project_web/honeybees.png",
@@ -201,9 +210,9 @@ export const products: Product[] = [
             "/images/products/Sustainable_honeybees_park_project_web/sign-detail.png",
         ],
         techIcons: [
-            "/images/techIcons/Sustainable_honeybees_park_project_web/html.png",
-            "/images/techIcons/Sustainable_honeybees_park_project_web/css.png",
-            "/images/techIcons/Sustainable_honeybees_park_project_web/javascript.png",
+            "/images/techIcons/html.png",
+            "/images/techIcons/css.png",
+            "/images/techIcons/javascript.png",
         ],
     },
     {
