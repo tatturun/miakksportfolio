@@ -5,6 +5,7 @@ import SentenceCard from "@/components/SentenceCard";
 import ImageGallery from "@/components/ImageGallery";
 import ProductInfo from "@/components/ProductInfo";
 import ProductAbstract from "@/components/ProductAbstract";
+import CtaLinkButton from "@/components/CtaLinkButton";
 
 type Props = {
     product: Product;
@@ -43,6 +44,24 @@ export default function AIoLite_AdvanceDescription({ product }: Props) {
                                     />
                                 ))}
                             </div>
+                        </div>
+                        <div className="flex gap-4 mt-8 justify-center text-white">
+                            <CtaLinkButton
+                                href="https://apps.apple.com/jp/app/アイオライト-アドバンス/id6752316526"
+                                variant="primary"
+                                target="_blank"
+                            >
+                                App Storeでインストール
+                            </CtaLinkButton>
+
+                            {/* Android インストールボタン (青色 - primary) */}
+                            <CtaLinkButton
+                                href=""
+                                variant="primary"
+                                target="_blank"
+                            >
+                                Google Playは準備中
+                            </CtaLinkButton>
                         </div>
                     </div>
                 </div>
