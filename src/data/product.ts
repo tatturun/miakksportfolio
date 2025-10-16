@@ -162,7 +162,7 @@ export const products: Product[] = [
         ],
     },
     {
-        slug: "sustainable_honeybees_park_project_web",
+        slug: "Sustainable_honeybees_park_project_web",
         name: "サステナハニー公園プロジェクトWeb",
         genre: "iOS Android",
         concept: "想いを形に。社会へつなぐ。",
