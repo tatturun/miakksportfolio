@@ -1,4 +1,4 @@
-// src/app/(main)/products/descriptions/Sustainable_honeybees_park_project_web.tsx
+// src/app/(main)/products/descriptions/sustainable_honeybees_park_project_web.tsx
 
 import { Product } from "@/data/product";
 import HoneySentenceCard from "@/components/HoneySentenceCard";
@@ -12,9 +12,8 @@ type Props = {
 export default function SustainableHoneybeesParkProjectWebDescription({ product }: Props) {
     return (
         <div className="min-h-screen bg-gradient-to-b from-amber-100 to-[#8BC34A]">
-            <div className="flex flex-col items-center px-8 pb-4 gap-8 w-full">
-                <div className="flex flex-col lg:flex-row items-center justify-center gap-8 w-full">
-                    <br />
+            <div className="m-auto max-w-7xl p-4 md-p-8">
+                <div className="flex flex-col lg:flex-row items-start justify-center gap-12 lg:min-h-[80vh]">
                     
                     {/* 左カラム：画像ギャラリー */}
                     <div className="w-full lg:w-2/5">
