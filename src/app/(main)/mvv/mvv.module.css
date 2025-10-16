@@ -1,0 +1,126 @@
+/* app/mvv/mvv.module.css */
+
+.pageContainer {
+  padding-top: 30px;
+}
+
+/* 各セクションの共通スタイル */
+.section {
+  min-height: 60vh;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  white-space: pre-line; 
+}
+
+/* Missionセクションのスタイル */
+.missionSection {
+  background: linear-gradient(to bottom, #f73767, #b700ff);
+}
+
+/* Visionセクションのスタイル */
+.visionSection {
+  background: linear-gradient(to bottom,#29a0f0, #45f8cb);
+  color: black; 
+}
+
+/* Valueセクションのスタイル */
+.valueSection {
+  background: linear-gradient(to bottom, #faf200, #f8c36d);
+  color: black; 
+}
+
+/* コンテンツのレイアウト */
+.content {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.titleArea {
+  flex: 1;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* アニメーションさせたい要素の初期状態 */
+.descriptionArea,
+.valueGrid {
+  flex: 1.2;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* isVisibleクラスが付与されたら、表示状態に変化させる */
+.section.isVisible .descriptionArea,
+.section.isVisible .valueGrid {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mission,Visionセクションのグリッドスタイル */
+.descriptionArea p{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.visionSection .titleArea {
+  text-align: right;
+}
+
+/* Valueセクションのグリッドスタイル */
+.valueGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  text-align: left;
+}
+.valueItem h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.valueItem p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1rem;
+  }
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .visionSection .content {
+    flex-direction: column-reverse;
+  }
+  .title {
+    font-size: 3.5rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  .valueGrid {
+    grid-template-columns: 1fr;
+  }
+}

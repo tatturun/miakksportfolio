@@ -28,14 +28,20 @@ export default function HomePage() {
         具体的な説明文？
       </p>
 
+      <br />
+      
       {/* ナビゲーションカード */}
       <nav className={styles.navigation}>
+        <Link href="/mvv" className={styles.card}>
+          <h2>MVV &rarr;</h2>
+          <p>Miakksの存在意義や未来像、メンバーで共有すべき価値観です。</p>
+        </Link>
         <Link href="/products" className={styles.card}>
-          <h2>制作物一覧 (Products) &rarr;</h2>
+          <h2>制作物一覧 &rarr;</h2>
           <p>これまで作成したプロジェクトや作品をご覧ください。</p>
         </Link>
         <Link href="/members" className={styles.card}>
-          <h2>メンバー紹介 (Members) &rarr;</h2>
+          <h2>メンバー紹介 &rarr;</h2> 
           <p>一緒に活動しているメンバーのプロフィールです。</p>
         </Link>
       </nav>
