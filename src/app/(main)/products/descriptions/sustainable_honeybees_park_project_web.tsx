@@ -1,4 +1,4 @@
-// src/app/(main)/products/descriptions/Sustainable_honeybees_park_project_web.tsx
+// src/app/(main)/products/descriptions/sustainable_honeybees_park_project_web.tsx
 
 import { Product } from "@/data/product";
 import HoneySentenceCard from "@/components/HoneySentenceCard";
