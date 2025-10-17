@@ -54,7 +54,7 @@ export default function ProductsPage() {
                 {/* プロダクト概要 (右側) */}
                 <div className="w-full md:w-3/4 pb-4">
                     {selectedProduct && (
-                        <div className="flex flex-col items-center justify-center px-8 pb-4 gap-8 w-full">
+                        <div className="flex flex-col items-center justify-center md:px-8 pb-4 gap-8 w-full">
                             <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full">
                                 <ImageGallery product={selectedProduct} />
 
