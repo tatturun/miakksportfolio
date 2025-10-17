@@ -109,14 +109,14 @@ export const products: Product[] = [
             "/images/techIcons/python.png",
             "/images/techIcons/SQLite.png",
             "/images/techIcons/fastapi.svg",
-            "/images/techIcons/MLKit.png",
+            "/images/techIcons/MLkit.png",
         ],
     },
     {
         slug: "AIoLite_Basic",
         name: "アイオライト ベーシック",
         genre: "iOS Android",
-        concept: "「なんで？」が「面白い！」に変わる。小学生のためのAIせんせい",
+        concept: "小学生のためのAIせんせい",
         abstract: "「この勉強って、なんの役に立つの？」というお子さんの素朴な疑問に、ドキッとした経験はありませんか？学びと日常を結びつけ、子どもの「知りたい」という気持ちを育む、会話型のAI家庭教師アプリです。",
         description: [
             {
