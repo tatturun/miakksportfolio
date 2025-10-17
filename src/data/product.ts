@@ -69,7 +69,7 @@ export const products: Product[] = [
         name: "アイオライト アドバンス",
         genre: "iOS Android",
         concept:
-            "いつでも、どこでも、気軽に質問できる「あなた専用のAI家庭教師」",
+            "あなた専用のAI家庭教師",
         abstract:
             "いつでもどこでも気軽に質問できる「あなた専用のAI家庭教師『AIoLite』」。あなたが答えを出せるようAI家庭教師が導きます。質問後にはあなたにぴったりの類題も提示します。",
         description: [
@@ -109,14 +109,15 @@ export const products: Product[] = [
             "/images/techIcons/python.png",
             "/images/techIcons/SQLite.png",
             "/images/techIcons/fastapi.svg",
+            "/images/techIcons/MLKit.png",
         ],
     },
     {
         slug: "AIoLite_Basic",
         name: "アイオライト ベーシック",
         genre: "iOS Android",
-        concept: "「なんで？」が「面白い！」に変わる。小学生のためのAIせんせい",
-        abstract: "学びと日常を結びつけ、子どもの「知りたい」という気持ちを育む、会話型のAI家庭教師アプリです。",
+        concept: "小学生のためのAIせんせい",
+        abstract: "「なんで？」が「面白い！」に変わる。\n学びと日常を結びつけ、子どもの「知りたい」という気持ちを育む、会話型のAI家庭教師アプリです。",
         description: [
             {
                 index: "安心安全な学習環境",
@@ -205,7 +206,7 @@ export const products: Product[] = [
                 index: "✨おわりに",
                 body:
                     "私たちMiakksにとって、このプロジェクトは技術を使って社会と向き合う貴重な一歩でした。制作を通じて感じた「想いを届けることの難しさ」は、これからの活動にも生きていく学びです。\n\n" +
-                    "このページが、「サステナハニー公園プロジェクト」の魅力を一人でも多くの方に届き、皆さまがアートの世界に深く触れるきっかけとなることを、心から願っています。" + 
+                    "このページが、「サステナハニー公園プロジェクト」の魅力を一人でも多くの方に届き、皆さまがアートの世界に深く触れるきっかけとなることを、心から願っています。" +
                     "ぜひ、Webサイトを通してプロジェクトの物語を感じてみてください。\n\n" +
                     "詳しくはコチラ👇",
                 link: {
