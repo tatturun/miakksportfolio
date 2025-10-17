@@ -6,6 +6,8 @@ import ProductInfo from "@/components/ProductInfo";
 import ProductAbstract from "@/components/ProductAbstract";
 import Image from "next/image";
 import SentencebubbleCard from "@/components/SentencebubbleCard";
+import CtaLinkButton from "@/components/CtaLinkButton";
+import { FaApple, FaGooglePlay, FaPlay} from "react-icons/fa";
 
 type Props = {
     product: Product;
@@ -47,6 +49,7 @@ export default function AIoLite_BasicDescription({ product }: Props) {
                                 />
                             </div>
 
+                            {/* 各説明項目 */}
                             <div className="flex space-x-4 overflow-x-auto snap-x snap-mandatory flex-grow pl-4 scroll-pl-4 pr-4 scroll-pr-4 items-start">
                                 {(product.description ?? []).map((item) => (
                                     <SentencebubbleCard
@@ -56,6 +59,36 @@ export default function AIoLite_BasicDescription({ product }: Props) {
                                     />
                                 ))}
                             </div>
+                        </div>
+
+                        {/* アクションボタン */}
+                        <div className="mt-4 flex flex-wrap justify-center items-center gap-4 px-8">
+                            <CtaLinkButton
+                                href="https://apps.apple.com/jp/app/アイオライト-ベーシック/id6751604328"
+                                variant="primary"
+                                target="_blank"
+                            >
+                                <FaApple className="mr-2" size={20} />
+                                App Store
+                            </CtaLinkButton>
+                        
+                            <CtaLinkButton
+                                href="https://play.google.com/store/apps/details?id=io.github.shun.osugi.AIoLite.Basic"
+                                variant="primary"
+                                target="_blank"
+                            >
+                                <FaGooglePlay className="mr-2" size={20} />
+                                Google Play
+                            </CtaLinkButton>
+
+                            <CtaLinkButton
+                                href="https://drive.google.com/file/d/1-ZikHydWm3R_uRJVw4_sVTXTT7_nhtp_/view?usp=drivesdk"
+                                variant="secondary" // secondary (濃い灰色) を使用
+                                target="_blank"     // 外部リンク
+                            >
+                                <FaPlay className="mr-2" size={16} /> {/* アイコンサイズを少し小さく */}
+                                デモ動画を見る
+                            </CtaLinkButton>
                         </div>
                     </div>
                 </div>
