@@ -116,7 +116,8 @@ export const products: Product[] = [
         name: "アイオライト ベーシック",
         genre: "iOS Android",
         concept: "「なんで？」が「面白い！」に変わる。小学生のためのAIせんせい",
-        abstract: "学びと日常を結びつけ、子どもの「知りたい」という気持ちを育む、会話型のAI家庭教師アプリです。",
+        abstract:
+            "学びと日常を結びつけ、子どもの「知りたい」という気持ちを育む、会話型のAI家庭教師アプリです。",
         description: [
             {
                 index: "安心安全な学習環境",
@@ -177,7 +178,8 @@ export const products: Product[] = [
         name: "サステナハニー公園プロジェクトWeb",
         genre: "iOS Android",
         concept: "想いを形に。社会へつなぐ。",
-        abstract: "サステナハニー公園プロジェクトは、環境教育と地域貢献を通じて持続可能な社会を目指す取り組みです。この看板はプロジェクトの理念を伝える役割を果たし、設置場所を取り巻く多様な人々が本プロジェクトに参加する後押しとなるような存在になることを目指しています。",
+        abstract:
+            "サステナハニー公園プロジェクトは、環境教育と地域貢献を通じて持続可能な社会を目指す取り組みです。この看板はプロジェクトの理念を伝える役割を果たし、設置場所を取り巻く多様な人々が本プロジェクトに参加する後押しとなるような存在になることを目指しています。",
         description: [
             {
                 index: "🌿サステナハニー公園プロジェクトとは",
@@ -205,7 +207,7 @@ export const products: Product[] = [
                 index: "✨おわりに",
                 body:
                     "私たちMiakksにとって、このプロジェクトは技術を使って社会と向き合う貴重な一歩でした。制作を通じて感じた「想いを届けることの難しさ」は、これからの活動にも生きていく学びです。\n\n" +
-                    "このページが、「サステナハニー公園プロジェクト」の魅力を一人でも多くの方に届き、皆さまがアートの世界に深く触れるきっかけとなることを、心から願っています。" + 
+                    "このページが、「サステナハニー公園プロジェクト」の魅力を一人でも多くの方に届き、皆さまがアートの世界に深く触れるきっかけとなることを、心から願っています。" +
                     "ぜひ、Webサイトを通してプロジェクトの物語を感じてみてください。\n\n" +
                     "詳しくはコチラ👇",
                 link: {
@@ -252,5 +254,17 @@ export const products: Product[] = [
             "/images/techIcons/github-mark.svg",
             "/images/techIcons/github-mark.svg",
         ],
+    },
+    {
+        slug: "others",
+        name: "",
+        genre: "",
+        concept: "その他の制作物",
+        abstract: "",
+        description: [],
+        icon: "/images/products/window.svg",
+        logo: "/images/products/window.svg",
+        images: [],
+        techIcons: [],
     },
 ];

@@ -14,7 +14,18 @@ export default function ProductsPage() {
     );
 
     const handleCardClick = (product: Product) => {
-        setSelectedProduct(product);
+        if (product.slug == "others") {
+            // 最後のダミープロダクトがクリックされた場合
+            handleOtherCardClick();
+        } else {
+            // 通常のプロダクトがクリックされた場合
+            setSelectedProduct(product);
+        }
+    };
+
+    // その他ボタン用のハンドラー
+    const handleOtherCardClick = () => {
+        alert("その他のプロダクトを見るアクションを実行します！");
     };
 
     return (
@@ -25,7 +36,7 @@ export default function ProductsPage() {
             {/* メインコンテンツコンテナ */}
             <div className="flex flex-col md:flex-row w-4/5 md:w-full max-w-7xl gap-8 mb-16">
                 {/* プロダクトカードリスト (モバイルでは上部・横並び、デスクトップでは左側・縦並び) */}
-                <div className="w-full md:w-1/4 overflow-x-auto md:overflow-y-auto md:h-[120vh] flex flex-row md:flex-col items-start space-x-4 md:space-x-0 md:space-y-4 p-4">
+                <div className="w-full md:w-1/4 overflow-x-auto md:overflow-y-auto md:h-[80vh] flex flex-row md:flex-col items-start space-x-4 md:space-x-0 md:space-y-4 p-4">
                     {products.map((product) => (
                         <div
                             key={product.slug}
