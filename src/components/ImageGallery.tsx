@@ -4,7 +4,7 @@
 
 import Image from "next/image";
 import { Product } from "@/data/product";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 interface Props {
@@ -13,6 +13,10 @@ interface Props {
 
 export default function ImageGallery({ product }: Props) {
     const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        setCurrentIndex(0);
+    }, [product.slug]);
 
     const handlePrev = () => {
         setCurrentIndex((prevIndex) =>

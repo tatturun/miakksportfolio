@@ -68,8 +68,7 @@ export const products: Product[] = [
         slug: "AIoLite_Advance",
         name: "アイオライト アドバンス",
         genre: "iOS Android",
-        concept:
-            "あなた専用のAI家庭教師",
+        concept: "あなた専用のAI家庭教師",
         abstract:
             "いつでもどこでも気軽に質問できる「あなた専用のAI家庭教師『AIoLite』」。あなたが答えを出せるようAI家庭教師が導きます。質問後にはあなたにぴったりの類題も提示します。",
         description: [
@@ -117,7 +116,8 @@ export const products: Product[] = [
         name: "アイオライト ベーシック",
         genre: "iOS Android",
         concept: "小学生のためのAIせんせい",
-        abstract: "「この勉強って、なんの役に立つの？」というお子さんの素朴な疑問に、ドキッとした経験はありませんか？学びと日常を結びつけ、子どもの「知りたい」という気持ちを育む、会話型のAI家庭教師アプリです。",
+        abstract:
+            "「この勉強って、なんの役に立つの？」というお子さんの素朴な疑問に、ドキッとした経験はありませんか？学びと日常を結びつけ、子どもの「知りたい」という気持ちを育む、会話型のAI家庭教師アプリです。",
         description: [
             {
                 index: "安心安全な学習環境",
@@ -157,7 +157,7 @@ export const products: Product[] = [
             "/images/techIcons/firebase.png",
             "/images/techIcons/Gemini.png",
             "/images/techIcons/SQLite.png",
-            "/images/techIcons/MLKit.png",
+            "/images/techIcons/MLkit.png",
         ],
     },
     {
