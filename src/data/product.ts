@@ -69,7 +69,7 @@ export const products: Product[] = [
         name: "アイオライト アドバンス",
         genre: "iOS Android",
         concept:
-            "いつでも、どこでも、気軽に質問できる「あなた専用のAI家庭教師」",
+            "あなた専用のAI家庭教師",
         abstract:
             "いつでもどこでも気軽に質問できる「あなた専用のAI家庭教師『AIoLite』」。あなたが答えを出せるようAI家庭教師が導きます。質問後にはあなたにぴったりの類題も提示します。",
         description: [
@@ -109,6 +109,7 @@ export const products: Product[] = [
             "/images/techIcons/python.png",
             "/images/techIcons/SQLite.png",
             "/images/techIcons/fastapi.svg",
+            "/images/techIcons/MLKit.png",
         ],
     },
     {
@@ -116,8 +117,7 @@ export const products: Product[] = [
         name: "アイオライト ベーシック",
         genre: "iOS Android",
         concept: "「なんで？」が「面白い！」に変わる。小学生のためのAIせんせい",
-        abstract:
-            "学びと日常を結びつけ、子どもの「知りたい」という気持ちを育む、会話型のAI家庭教師アプリです。",
+        abstract: "「この勉強って、なんの役に立つの？」というお子さんの素朴な疑問に、ドキッとした経験はありませんか？学びと日常を結びつけ、子どもの「知りたい」という気持ちを育む、会話型のAI家庭教師アプリです。",
         description: [
             {
                 index: "安心安全な学習環境",
@@ -130,6 +130,18 @@ export const products: Product[] = [
             {
                 index: "学びと日常がつながる体験",
                 body: "学校で習う知識が、暮らしの中でどう活かされているかをAIせんせいが具体的に教えてくれます。点と点だった知識が線でつながる瞬間、お子さまの目に「知るって面白い！」という輝きが生まれます。",
+            },
+            {
+                index: "Flutterを使った理由",
+                body: "単一のコードでiOSとAndroidの両方に対応できるクロスプラットフォーム開発が最大の魅力でした。これにより、開発効率を大幅に向上させると同時に、OSによる機能差やデザインのズレを最小限に抑えれました。",
+            },
+            {
+                index: "Geminiを使った理由",
+                body: "数あるAIモデルの中からGeminiを選んだのは、特定の役割（ペルソナ）になりきって自然な対話を行う能力に長けていたからです。「小学生の最高の友達であり、先生でもある」という『AIせんせい』のキャラクター設定を、Geminiは非常に高いレベルで実現してくれました。",
+            },
+            {
+                index: "開発中苦労した点",
+                body: "開発中、小学生に使ってもらったところ、大人目線では気づけないUI課題が明らかになりました。当初、数式入力やカメラでの質問機能が子どもには分かりづらく、専用の補助ボタンの設置や、次に何をすべきか視覚的に誘導するUIへと改良しました。",
             },
         ],
         icon: "/images/products/AIoLite_Basic/Icon.png",
