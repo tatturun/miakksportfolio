@@ -190,7 +190,8 @@ export const products: Product[] = [
         name: "サステナハニー公園プロジェクトWeb",
         genre: "iOS Android",
         concept: "想いを形に。社会へつなぐ。",
-        abstract: "サステナハニー公園プロジェクトは、環境教育と地域貢献を通じて持続可能な社会を目指す取り組みです。この看板はプロジェクトの理念を伝える役割を果たし、設置場所を取り巻く多様な人々が本プロジェクトに参加する後押しとなるような存在になることを目指しています。",
+        abstract:
+            "サステナハニー公園プロジェクトは、環境教育と地域貢献を通じて持続可能な社会を目指す取り組みです。この看板はプロジェクトの理念を伝える役割を果たし、設置場所を取り巻く多様な人々が本プロジェクトに参加する後押しとなるような存在になることを目指しています。",
         description: [
             {
                 index: "🌿サステナハニー公園プロジェクトとは",
@@ -265,5 +266,17 @@ export const products: Product[] = [
             "/images/techIcons/github-mark.svg",
             "/images/techIcons/github-mark.svg",
         ],
+    },
+    {
+        slug: "others",
+        name: "",
+        genre: "",
+        concept: "その他の制作物",
+        abstract: "",
+        description: [],
+        icon: "/images/products/window.svg",
+        logo: "/images/products/window.svg",
+        images: [],
+        techIcons: [],
     },
 ];
