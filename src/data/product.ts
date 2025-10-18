@@ -164,8 +164,10 @@ export const products: Product[] = [
         slug: "Jeturbo",
         name: "ジェッターボ",
         genre: "PC",
-        concept: "スピードで攻めるか、それともコーナーで差をつけるか！戦略性のある3Dレースゲーム",
-        abstract: "最大6人で対戦できるターン制のオンライン空中レースゲーム。手札からレーンを選択して上下左右自由に配置し、ライバルよりも早くゴールを目指そう！",
+        concept:
+            "スピードで攻めるか、それともコーナーで差をつけるか！戦略性のある3Dレースゲーム",
+        abstract:
+            "最大6人で対戦できるターン制のオンライン空中レースゲーム。手札からレーンを選択して上下左右自由に配置し、ライバルよりも早くゴールを目指そう！",
         description: [
             {
                 index: "遊び方1",
@@ -184,8 +186,8 @@ export const products: Product[] = [
                 body: "ゲームエンジンはUnity、マルチプレイのネットワーク構築にはPhoton Fusionを使用しました。ゲーム内で登場するキャラクターなどはBlenderにて製作しました。",
             },
         ],
-        icon: "/images/products/Jeturbo/jeturbo_icon.png",
-        logo: "/images/products/Jeturbo/jeturbo_logo.png",
+        icon: "/images/products/Jeturbo/Jeturbo_icon.png",
+        logo: "/images/products/Jeturbo/Jeturbo_logo.png",
         images: [
             "/images/products/Jeturbo/Jeturbo-window1.png",
             "/images/products/Jeturbo/Jeturbo-window2.png",
@@ -262,7 +264,8 @@ export const products: Product[] = [
         name: "ブン喝ッ！！",
         genre: "ios Android",
         concept: "眠る時間のないアンタにブン喝ッ！！",
-        abstract: "分割睡眠の自動スケジューリング・目覚ましアプリ。起こしてくるオカンにツッコミを入れることでアラームを停止します。",
+        abstract:
+            "分割睡眠の自動スケジューリング・目覚ましアプリ。起こしてくるオカンにツッコミを入れることでアラームを停止します。",
         description: [
             {
                 index: "分割睡眠のすすめ",
@@ -277,12 +280,12 @@ export const products: Product[] = [
                 body: "時間になるとオカンがボケをかましながら起こしてくれます。アラームを止めるには、「なんでやねん」と声に出してオカンにツッコミを入れてアラームを止めましょう！",
             },
         ],
-        icon: "/images/products/Bunkatsu/Bunkatsu_icon.svg",
+        icon: "/images/products/Bunkatsu/Bunkatsu_icon.png",
         logo: "/images/products/Bunkatsu/Bunkatsu_logo.svg",
         images: [
+            "/images/products/Bunkatsu/Bunkatsu_window3.png",
             "/images/products/Bunkatsu/Bunkatsu_window1.png",
             "/images/products/Bunkatsu/Bunkatsu_window2.png",
-            "/images/products/Bunkatsu/Bunkatsu_window3.png",
         ],
         techIcons: [
             "/images/techIcons/Flutter.png",
@@ -301,8 +304,8 @@ export const products: Product[] = [
         concept: "その他の制作物",
         abstract: "",
         description: [],
-        icon: "/images/products/window.svg",
-        logo: "/images/products/window.svg",
+        icon: "/images/products/other_icons.png",
+        logo: "",
         images: [],
         techIcons: [],
     },
