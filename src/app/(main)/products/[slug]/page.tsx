@@ -2,7 +2,6 @@
 
 import { products } from "@/data/product";
 import { notFound } from "next/navigation";
-import SampleDescription from "@/app/(main)/products/descriptions/Sample";
 import AIoLite_AdvanceDescription from "../descriptions/AIoLite_Advanced";
 import AIoLite_BasicDescription from "../descriptions/AIoLite_Basic";
 import JeturboDescription from "../descriptions/Jeturbo";
@@ -32,8 +31,6 @@ export default async function ProductDetailPage({ params }: Props) {
 
     // slugに応じて適切なコンポーネントを返す AIoLite_BasicDescription
     switch (product.slug) {
-        case "Sample":
-            return <SampleDescription product={product} />;
         case "AIoLite_Advance":
             return <AIoLite_AdvanceDescription product={product} />;
         case "AIoLite_Basic":
