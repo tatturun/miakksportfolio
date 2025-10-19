@@ -9,15 +9,9 @@ export type Member = {
 // メンバーデータの配列
 export const members: Member[] = [
   {
-    slug: 'taro-yamada',
-    name: '山田 太郎',
-    role: 'リードデザイナー',
+    slug: 'shun-osugi',
+    name: '大杉 駿',
+    role: '団体代表',
     avatarUrl: '/images/members/file.svg',
-  },
-  {
-    slug: 'hanako-sato',
-    name: '佐藤 花子',
-    role: 'フロントエンドエンジニア',
-    avatarUrl: '/images/members/globe.svg',
   },
 ];
