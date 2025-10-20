@@ -26,7 +26,7 @@ export default function ProductInfo({ product }: Props) {
                 />
             </div>
 
-            <div className="w-full flex flex-wrap gap-4 py-8 justify-center">
+            <div className="w-full flex flex-wrap gap-4 pt-8 md:py-8 justify-center">
                 {product.techIcons.map((imageUrl, index) => (
                     <div key={index} className="snap-start flex-shrink-0">
                         <div className="relative w-[45px] h-[45px] overflow-hidden">
