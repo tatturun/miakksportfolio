@@ -14,7 +14,7 @@ export default function MemberCard({ member }: MemberCardProps) {
     return (
         <Link
             href={`/members/${member.slug}`}
-            className="block w-1/2 md:w-1/3 p-2 mx-4 group"
+            className="block w-1/2 md:w-1/5 p-2 group"
         >
             <div
                 className="parallelogram-container relative bg-slate-900 shadow-lg hover:shadow-xl transition-all duration-300 border-4 aspect-[3/4]"
