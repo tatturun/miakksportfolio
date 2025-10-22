@@ -16,6 +16,24 @@ a {
 }
 
 .hide-scrollbar {
-    -ms-overflow-style: none;  
-    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* メンバーカード全体 */
+.parallelogram-container {
+    transform: skewX(-15deg);
+    overflow: hidden;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 画像、テキストなど、子要素の変形を打ち消す */
+.parallelogram-content {
+    /*transform: skewX(15deg);*/
+}
+
+/* カードのホバー効果 */
+.parallelogram-container:hover {
+    transform: skewX(-15deg) scale(1.05);
 }
