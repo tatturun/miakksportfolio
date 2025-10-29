@@ -13,7 +13,7 @@ export const members: Member[] = [
         slug: "shun-osugi",
         name: "大杉 駿",
         role: "代表",
-        avatarUrl: "/images/members/file.svg",
+        avatarUrl: "/images/members/shun_osugi.png",
         color: "#f8b217",
     },
     {
