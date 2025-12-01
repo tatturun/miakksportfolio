@@ -5,10 +5,10 @@ export type Product = {
     genre: string; // 対応機種等
     concept: string; // プロダクトのコンセプト（一言で）
     abstract: string; // プロダクトの概要（一覧，個別プロダクトページの最上に表示）
+    link?: { url: string; text: string }; // プロダクトのリンク（オプション）
     description: {
         index: string;
         body: string;
-        link?: { url: string; text: string };
     }[]; // プロダクトの詳細（個別プロダクトページにのみ表示）
     icon: string; // アイコン（正方形）
     logo: string; // ロゴ（横長想定）
@@ -163,6 +163,10 @@ export const products: Product[] = [
         concept: "想いを形に。社会へつなぐ。",
         abstract:
             "サステナハニー公園プロジェクトは、環境教育と地域貢献を通じて持続可能な社会を目指す取り組みです。この看板はプロジェクトの理念を伝える役割を果たし、設置場所を取り巻く多様な人々が本プロジェクトに参加する後押しとなるような存在になることを目指しています。",
+        link: {
+                    url: "https://sustainable-honeybees-park-project.pages.dev",
+                    text: "https://sustainable-honeybees-park-project.pages.dev",
+            },
         description: [
             {
                 index: "🌿サステナハニー公園プロジェクトとは",
@@ -191,12 +195,7 @@ export const products: Product[] = [
                 body:
                     "私たちMiakksにとって、このプロジェクトは技術を使って社会と向き合う貴重な一歩でした。制作を通じて感じた「想いを届けることの難しさ」は、これからの活動にも生きていく学びです。\n\n" +
                     "このページが、「サステナハニー公園プロジェクト」の魅力を一人でも多くの方に届き、皆さまがアートの世界に深く触れるきっかけとなることを、心から願っています。" +
-                    "ぜひ、Webサイトを通してプロジェクトの物語を感じてみてください。\n\n" +
-                    "詳しくはコチラ👇",
-                link: {
-                    url: "https://sustainable-honeybees-park-project.pages.dev",
-                    text: "https://sustainable-honeybees-park-project.pages.dev",
-                },
+                    "ぜひ、Webサイトを通してプロジェクトの物語を感じてみてください。\n\n"
             },
         ],
         icon: "/images/products/Sustainable_honeybees_park_project_web/honeybees.png",
