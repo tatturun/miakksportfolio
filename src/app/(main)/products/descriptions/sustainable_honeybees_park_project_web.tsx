@@ -37,7 +37,6 @@ export default function SustainableHoneybeesParkProjectWebDescription({ product 
                                         key={item.index}
                                         index={item.index}
                                         body={item.body}
-                                        link={item.link}
                                     />
                                 ))}
                             </div>
