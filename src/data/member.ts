@@ -27,14 +27,21 @@ export const members: Member[] = [
         slug: "kenya-kaneko",
         name: "金子 拳也",
         role: "会計",
-        avatarUrl: "/images/members/file.svg",
+        avatarUrl: "/images/members/kenya_kaneko.png",
         color: "#6bc8f2",
     },
     {
         slug: "itsuki-oba",
         name: "大場 樹",
         role: "主務",
-        avatarUrl: "/images/members/file.svg",
+        avatarUrl: "/images/members/itsuki_oba.png",
         color: "#66bf97",
+    },
+    {
+        slug: "m",
+        name: "M",
+        role: "広報",
+        avatarUrl: "/images/members/m.png",
+        color: "#e7336e",
     },
 ];
