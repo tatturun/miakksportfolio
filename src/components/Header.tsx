@@ -40,6 +40,7 @@ const Header = () => {
                             <li key={link.name}>
                                 <Link
                                     href={link.href}
+                                    onClick={() => setIsMenuOpen(false)}
                                     className="text-right text-slate-400 rounded-md transition-colors duration-200 px-4 py-2 hover:bg-slate-300 hover:text-slate-800"
                                 >
                                     {link.name}
