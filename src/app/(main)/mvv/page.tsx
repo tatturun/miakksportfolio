@@ -10,6 +10,10 @@ const useOnScreen = (options: IntersectionObserverInit) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    // ref.currentを事前にコピーしてから使う
+    const currentElement = ref.current;
+    if (!currentElement) return;
+
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         setIsVisible(true);
@@ -18,13 +22,11 @@ const useOnScreen = (options: IntersectionObserverInit) => {
       }
     }, options);
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
+    observer.observe(currentElement);
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentElement) {
+        observer.unobserve(currentElement);
       }
     };
   }, [ref, options]);
