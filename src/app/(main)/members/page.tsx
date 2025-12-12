@@ -2,7 +2,6 @@
 
 import { members } from "@/data/member";
 import MemberCard from "@/components/MemberCard";
-import styles from "./members.module.css";
 
 export default function MembersPage() {
     return (

@@ -3,7 +3,6 @@
 import React from "react";
 import { products, Product } from "@/data/otherProduct";
 import OtherProductCard from "@/components/OtherProductCard";
-import ProductCard from "@/components/ProductCard";
 
 interface Props {
     onProductSelect: (product: Product) => void;
