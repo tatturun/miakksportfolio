@@ -1,7 +1,6 @@
 // components/ProductInfo.tsx
 
 import Image from "next/image";
-import Link from "next/link";
 import { Product } from "@/data/product";
 
 interface Props {
