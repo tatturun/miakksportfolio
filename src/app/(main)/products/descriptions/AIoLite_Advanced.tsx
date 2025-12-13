@@ -1,11 +1,13 @@
 // src/app/(main)/products/descriptions/AIoLite_Advance.tsx
 
 import { Product } from "@/data/product";
-import SentenceCard from "@/components/SentenceCard";
+import SentencebubbleCard from "@/components/SentencebubbleCard";
 import ImageGallery from "@/components/ImageGallery";
 import ProductInfo from "@/components/ProductInfo";
 import ProductAbstract from "@/components/ProductAbstract";
 import CtaLinkButton from "@/components/CtaLinkButton";
+import Image from "next/image";
+import { FaApple } from "react-icons/fa";
 
 type Props = {
     product: Product;
@@ -28,17 +30,27 @@ export default function AIoLite_AdvanceDescription({ product }: Props) {
                             <ProductInfo product={product} />
 
                             <div className="flex flex-col w-full mx-6">
-                                {/* パーテーション */}
-
                                 <ProductAbstract product={product} />
                             </div>
                         </div>
 
                         {/* プロダクト詳細カード部分 */}
-                        <div className="m-8">
-                            <div className="flex space-x-4 overflow-x-auto p-4 snap-x snap-mandatory">
+                        <div className="my-8 mr-8 flex flex-row items-start gap-3">
+                            {/* キャラクター画像 */}
+                            <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 relative rounded-full overflow-hidden self-start">
+                                <Image
+                                    src={"/images/products/AIoLite_Advance/io.png"}
+                                    alt={`${product.name} のキャラクター`}
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    style={{objectFit: "cover"}}
+                                />
+                            </div>
+
+                            {/* 各説明項目 (SentencebubbleCardに変更) */}
+                            <div className="flex space-x-4 overflow-x-auto snap-x snap-mandatory flex-grow pl-4 scroll-pl-4 pr-4 scroll-pr-4 items-start">
                                 {(product.description ?? []).map((item) => (
-                                    <SentenceCard
+                                    <SentencebubbleCard
                                         key={item.index}
                                         index={item.index}
                                         body={item.body}
@@ -52,16 +64,8 @@ export default function AIoLite_AdvanceDescription({ product }: Props) {
                                 variant="primary"
                                 target="_blank"
                             >
+                                <FaApple className="mr-2" size={20} />
                                 App Storeでインストール
-                            </CtaLinkButton>
-
-                            {/* Android インストールボタン (青色 - primary) */}
-                            <CtaLinkButton
-                                href=""
-                                variant="primary"
-                                target="_blank"
-                            >
-                                Google Playは準備中
                             </CtaLinkButton>
                         </div>
                     </div>
