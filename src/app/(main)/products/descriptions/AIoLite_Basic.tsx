@@ -26,13 +26,10 @@ export default function AIoLite_BasicDescription({ product }: Props) {
                     <div className="hidden md:block w-px bg-slate-100 self-stretch"></div>
 
                     <div className="flex flex-col md:overflow-y-auto md:h-[80vh] w-full md:w-3/5">
-                        <div className="flex flex-col md:flex-row w-full">
+                        <div className="flex flex-col w-full">
                             <ProductInfo product={product} />
 
-                            <div className="flex flex-col md:flex-row w-full md:w-2/5 mx-6">
-                                {/* パーテーション */}
-                                <div className="hidden md:block w-px bg-slate-100 self-stretch"></div>
-
+                            <div className="flex flex-col w-full px-6 mt-4">
                                 <ProductAbstract product={product} />
                             </div>
                         </div>

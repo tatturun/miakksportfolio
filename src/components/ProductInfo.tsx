@@ -9,7 +9,7 @@ interface Props {
 
 export default function ProductInfo({ product }: Props) {
     return (
-        <div className="w-full md:w-3/5 flex flex-col items-center md:space-y-10 p-2">
+        <div className="w-full flex flex-col items-center md:space-y-10 p-2">
             <h3 className="whitespace-pre-wrap w-full text-xl text-right text-slate-800">
                 {product.genre}
             </h3>
