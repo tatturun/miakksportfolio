@@ -53,6 +53,9 @@ export const products: Product[] = [
             "/images/products/AIoLite_Advance/chat.PNG",
             "/images/products/AIoLite_Advance/Feedback.PNG",
             "/images/products/AIoLite_Advance/SameQ.PNG",
+            "/images/products/AIoLite_Advance/FeedbackTotal.PNG",
+            "/images/products/AIoLite_Advance/Subscription.PNG",
+            "/images/products/AIoLite_Advance/Friend.PNG",
             "/images/products/AIoLite_Advance/Total.PNG",
         ],
         techIcons: [
