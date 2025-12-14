@@ -105,9 +105,12 @@ export const products: Product[] = [
         icon: "/images/products/AIoLite_Basic/Icon.png",
         logo: "/images/products/AIoLite_Basic/AIoLite_text_white.png",
         images: [
-            "/images/products/AIoLite_Basic/chat.jpeg",
+            "/images/products/AIoLite_Basic/Home.PNG",
+            "/images/products/AIoLite_Basic/Menu.PNG",
             "/images/products/AIoLite_Basic/imageinput1.png",
             "/images/products/AIoLite_Basic/imageinput2.png",
+            "/images/products/AIoLite_Basic/Input.PNG",
+            "/images/products/AIoLite_Basic/chat.PNG",
             "/images/products/AIoLite_Basic/feedback.png",
         ],
         techIcons: [
