@@ -31,7 +31,7 @@ export default function SustainableHoneybeesParkProjectWebDescription({ product 
                             <hr className="my-10" />
                             <h2 className="text-2xl font-bold text-slate-800 mb-6">プロジェクトの詳細</h2>
                             
-                            <div className="flex overflow-x-auto hide-scrollbar scroll-px-4">
+                            <div className="flex overflow-x-auto custom-scrollbar scroll-px-4">
                                 {(product.description ?? []).map((item) => (
                                     <HoneySentenceCard
                                         key={item.index}
