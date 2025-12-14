@@ -14,6 +14,7 @@ export type Product = {
     logo: string; // ロゴ（横長想定）
     images: string[]; // 画像リスト（一覧，個別プロダクトページの最上に表示）
     techIcons: string[]; // 使用技術のアイコンリスト
+    demo?: string; // デモURL
 };
 
 // プロダクトデータの配列
@@ -155,6 +156,7 @@ export const products: Product[] = [
             "/images/techIcons/photon.svg",
             "/images/techIcons/blender.png",
         ],
+        demo: "https://drive.google.com/file/d/11S0ljM_Aa47G8CiE3w5xyh08-F7CS5uv/preview",
     },
     {
         slug: "sustainable_honeybees_park_project_web",
