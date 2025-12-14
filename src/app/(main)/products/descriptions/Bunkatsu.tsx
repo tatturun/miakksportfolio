@@ -20,8 +20,9 @@ export default function BunkatsuDescription({ product }: Props) {
                     {/* パーテーション */}
                     <div className="hidden md:block w-px bg-slate-100 self-stretch"></div>
 
-                    <div className="flex flex-col md:overflow-y-auto md:h-[80vh] w-full md:w-2/3">
+                    <div className="flex flex-col md:overflow-y-auto md:h-[80vh] w-full md:w-2/3 custom-scrollbar">
                         <div className="flex flex-col w-full">
+
                             <ProductInfo product={product} />
 
                             <div className="flex flex-col w-full px-6 mt-4">
@@ -31,7 +32,7 @@ export default function BunkatsuDescription({ product }: Props) {
 
                         {/* プロダクト詳細カード部分 */}
                         <div className="m-8">
-                            <div className="flex space-x-4 overflow-x-auto p-4 snap-x snap-mandatory">
+                            <div className="flex space-x-4 overflow-x-auto p-4 snap-x snap-mandatory custom-scrollbar">
                                 {(product.description ?? []).map((item) => (
                                     <SentenceCard
                                         key={item.index}

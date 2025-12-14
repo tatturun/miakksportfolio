@@ -7,7 +7,7 @@ import ProductAbstract from "@/components/ProductAbstract";
 import Image from "next/image";
 import SentencebubbleCard from "@/components/SentencebubbleCard";
 import CtaLinkButton from "@/components/CtaLinkButton";
-import { FaApple, FaGooglePlay, FaPlay} from "react-icons/fa";
+import { FaApple, FaGooglePlay, FaPlay } from "react-icons/fa";
 
 type Props = {
     product: Product;
@@ -24,8 +24,8 @@ export default function AIoLite_BasicDescription({ product }: Props) {
 
                     {/* パーテーション */}
                     <div className="hidden md:block w-px bg-slate-100 self-stretch"></div>
-
-                    <div className="flex flex-col md:overflow-y-auto md:h-[80vh] w-full md:w-3/5">
+                    
+                    <div className="flex flex-col md:overflow-y-auto md:h-[80vh] w-full md:w-3/5 custom-scrollbar">
                         <div className="flex flex-col w-full">
                             <ProductInfo product={product} />
 
@@ -47,7 +47,7 @@ export default function AIoLite_BasicDescription({ product }: Props) {
                             </div>
 
                             {/* 各説明項目 */}
-                            <div className="flex space-x-4 overflow-x-auto snap-x snap-mandatory flex-grow pl-4 scroll-pl-4 pr-4 scroll-pr-4 items-start">
+                            <div className="flex space-x-4 overflow-x-auto snap-x snap-mandatory flex-grow pl-4 scroll-pl-4 pr-4 scroll-pr-4 items-start custom-scrollbar">
                                 {(product.description ?? []).map((item) => (
                                     <SentencebubbleCard
                                         key={item.index}
@@ -68,7 +68,7 @@ export default function AIoLite_BasicDescription({ product }: Props) {
                                 <FaApple className="mr-2" size={20} />
                                 App Store
                             </CtaLinkButton>
-                        
+
                             <CtaLinkButton
                                 href="https://play.google.com/store/apps/details?id=io.github.shun.osugi.AIoLite.Basic"
                                 variant="primary"
