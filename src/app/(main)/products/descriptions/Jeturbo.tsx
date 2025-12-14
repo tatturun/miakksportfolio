@@ -1,10 +1,12 @@
 // src/app/(main)/products/descriptions/Sample.tsx
+"use client";
 
 import { Product } from "@/data/product";
 import SentenceCard from "@/components/SentenceCard";
 import ImageGallery from "@/components/ImageGallery";
 import ProductInfo from "@/components/ProductInfo";
 import ProductAbstract from "@/components/ProductAbstract";
+import SentenceScrollButton from "@/components/SentenceScrollButton";
 
 type Props = {
     product: Product;
@@ -31,15 +33,20 @@ export default function JeturboDescription({ product }: Props) {
 
                         {/* プロダクト詳細カード部分 */}
                         <div className="m-8">
-                            <div className="flex space-x-4 overflow-x-auto p-4 snap-x snap-mandatory custom-scrollbar">
+                            <SentenceScrollButton>
                                 {(product.description ?? []).map((item) => (
-                                    <SentenceCard
+                                    <div
                                         key={item.index}
-                                        index={item.index}
-                                        body={item.body}
-                                    />
+                                        className="snap-start shrink-0"
+                                    >
+                                        <SentenceCard
+                                            key={item.index}
+                                            index={item.index}
+                                            body={item.body}
+                                        />
+                                    </div>
                                 ))}
-                            </div>
+                            </SentenceScrollButton>
                         </div>
                     </div>
                 </div>
