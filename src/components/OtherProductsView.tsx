@@ -15,7 +15,7 @@ export default function OtherProductsView({ onProductSelect }: Props) {
                 その他の制作物
             </h2>
 
-            <div className="flex flex-col items-center gap-4 md:max-h-[80vh] overflow-y-auto">
+            <div className="flex flex-col items-center gap-4 md:max-h-[80vh] overflow-y-auto custom-scrollbar">
                 {products.map((product) => (
                     <div
                         key={product.slug}
