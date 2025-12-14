@@ -1,9 +1,11 @@
 // src/app/(main)/products/descriptions/sustainable_honeybees_park_project_web.tsx
+"use client";
 
 import { Product } from "@/data/product";
 import HoneySentenceCard from "@/components/HoneySentenceCard";
 import ImageGallery from "@/components/ImageGallery";
 import ProductHero from "@/components/ProductHero";
+import SentenceScrollButton from "@/components/SentenceScrollButton";
 
 type Props = {
     product: Product;
@@ -30,16 +32,20 @@ export default function SustainableHoneybeesParkProjectWebDescription({ product 
                         <div className="lg:mt-auto text-center">
                             <hr className="my-10" />
                             <h2 className="text-2xl font-bold text-slate-800 mb-6">プロジェクトの詳細</h2>
-                            
-                            <div className="flex overflow-x-auto custom-scrollbar scroll-px-4">
+                            <SentenceScrollButton>
                                 {(product.description ?? []).map((item) => (
+                                    <div
+                                        key={item.index}
+                                        className="snap-start shrink-0"
+                                    >
                                     <HoneySentenceCard
                                         key={item.index}
                                         index={item.index}
                                         body={item.body}
                                     />
+                                    </div>
                                 ))}
-                            </div>
+                            </SentenceScrollButton>
                         </div>
                     </div>
                 </div>

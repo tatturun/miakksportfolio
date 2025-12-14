@@ -17,7 +17,7 @@ const hexagonStyle = {
 
 export default function HoneySentenceCard({ index, body, link }: Props) {
     return (
-        <div className="flex-shrink-0 w-[500px] h-[550px] relative group mx-8"> 
+        <div className="max-w-[550px] shrink-0 snap-center flex items-center justify-center p-4 aspect-square">
             {/* 六角形の背景コンテナ */}
             <div 
                 className="relative p-2 w-full h-full bg-amber-200 shadow-lg"
