@@ -14,6 +14,7 @@ export type Product = {
     logo: string; // ロゴ（横長想定）
     images: string[]; // 画像リスト（一覧，個別プロダクトページの最上に表示）
     techIcons: string[]; // 使用技術のアイコンリスト
+    demo?: string; // デモURL
 };
 
 // プロダクトデータの配列
@@ -52,6 +53,9 @@ export const products: Product[] = [
             "/images/products/AIoLite_Advance/chat.PNG",
             "/images/products/AIoLite_Advance/Feedback.PNG",
             "/images/products/AIoLite_Advance/SameQ.PNG",
+            "/images/products/AIoLite_Advance/FeedbackTotal.PNG",
+            "/images/products/AIoLite_Advance/Subscription.PNG",
+            "/images/products/AIoLite_Advance/Friend.PNG",
             "/images/products/AIoLite_Advance/Total.PNG",
         ],
         techIcons: [
@@ -101,9 +105,12 @@ export const products: Product[] = [
         icon: "/images/products/AIoLite_Basic/Icon.png",
         logo: "/images/products/AIoLite_Basic/AIoLite_text_white.png",
         images: [
-            "/images/products/AIoLite_Basic/chat.jpeg",
+            "/images/products/AIoLite_Basic/Home.PNG",
+            "/images/products/AIoLite_Basic/Menu.PNG",
             "/images/products/AIoLite_Basic/imageinput1.png",
             "/images/products/AIoLite_Basic/imageinput2.png",
+            "/images/products/AIoLite_Basic/Input.PNG",
+            "/images/products/AIoLite_Basic/chat.PNG",
             "/images/products/AIoLite_Basic/feedback.png",
         ],
         techIcons: [
@@ -155,6 +162,7 @@ export const products: Product[] = [
             "/images/techIcons/photon.svg",
             "/images/techIcons/blender.png",
         ],
+        demo: "https://drive.google.com/file/d/11S0ljM_Aa47G8CiE3w5xyh08-F7CS5uv/preview",
     },
     {
         slug: "sustainable_honeybees_park_project_web",

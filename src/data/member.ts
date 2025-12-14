@@ -1,20 +1,65 @@
-// メンバーの型定義
-export type Member = {
-    slug: string; // URLに使われる一意のID
-    name: string; // メンバー名
-    role: string; // 役職
-    avatarUrl: string; // アバター画像URL
-    color: string; // メンバーカラー
+// SNSリンクの型（変更なし）
+type SocialLinks = {
+    github?: string;
+    twitter?: string;
+    qiita?: string;
+    note?: string;
+    portfolio?: string;
 };
 
-// メンバーデータの配列
+// 経歴の型（変更なし）
+type History = {
+    date: string;
+    title: string;
+    url?: string;
+};
+
+// 資格の型（新規追加）
+type Certification = {
+    name: string;
+    date: string;
+    url?: string;
+};
+
+// メンバーの型定義
+export type Member = {
+    slug: string;
+    name: string;
+    role: string;
+    subRole?: string;
+    avatarUrl: string;
+    color: string;
+    bio: string;
+    skills: string[];
+    certifications?: Certification[];
+    socials?: SocialLinks;
+    history?: History[];
+};
+
 export const members: Member[] = [
     {
         slug: "shun-osugi",
         name: "大杉 駿",
         role: "代表",
+        subRole: "Full Stack Engineer",
         avatarUrl: "/images/members/shun_osugi.png",
         color: "#f8b217",
+        bio: "情報系大学3年生。",
+        skills: ["Python", "FastAPI", "AIエージェント", "C#", "深層学習", "Unity", "Render", "Java", "TypeScript", "Next.js", "Flutter", "Docker", "firebase"],
+        certifications: [
+            { date: "2025.03", name: "Q-Quest2024 - 基礎学習プログラム 修了", url: "https://www.openbadge-global.com/api/v1.0/openBadge/v2/Wallet/Public/GetAssertionShare/ZDJkSnhXNWV4VitaTjIyQUw2T2ZYQT09" },
+            { date: "2025.03", name: "Q-Quest2024 - 事業創造プログラム 修了", url: "https://www.openbadge-global.com/api/v1.0/openBadge/v2/Wallet/Public/GetAssertionShare/TTAzMXpGRjNGQkdiN0dlcjVIenZIZz09" },
+            { date: "2025.05", name: "基本情報技術者試験 合格" },
+            { date: "2025.07", name: "Deep Learning 基礎講座 2025 Spring 修了", url: "https://drive.google.com/file/d/12ZK2UzPrVYaX4JGWh6Mg_eIiv8ucAixH/view?usp=sharing" },
+            { date: "2025.09", name: "GPS-Academic 思考力Sランク", url: "https://drive.google.com/file/d/1Knh8ZRglFCLWkwfT8NClaXFpi5S6nHla/view?usp=sharing" },
+        ],
+        socials: {
+            github: "https://github.com/shun-osugi",
+        },
+        history: [
+            { date: "2023.08", title: "技育CAMP ハッカソン 優秀賞", url: "https://hacku.yahoo.co.jp/hacku2025_osaka/" },
+            { date: "2024.02", title: "株式会社〇〇 インターン参加" },
+        ],
     },
     {
         slug: "akira-okada",
@@ -22,6 +67,8 @@ export const members: Member[] = [
         role: "副代表",
         avatarUrl: "/images/members/akira_okada.png",
         color: "#856daf",
+        bio: "",
+        skills: []
     },
     {
         slug: "kenya-kaneko",
@@ -29,6 +76,8 @@ export const members: Member[] = [
         role: "会計",
         avatarUrl: "/images/members/kenya_kaneko.png",
         color: "#6bc8f2",
+        bio: "",
+        skills: []
     },
     {
         slug: "itsuki-oba",
@@ -36,6 +85,8 @@ export const members: Member[] = [
         role: "主務",
         avatarUrl: "/images/members/itsuki_oba.png",
         color: "#66bf97",
+        bio: "",
+        skills: []
     },
     {
         slug: "m",
@@ -43,5 +94,7 @@ export const members: Member[] = [
         role: "広報",
         avatarUrl: "/images/members/m.png",
         color: "#e7336e",
+        bio: "",
+        skills: []
     },
 ];
