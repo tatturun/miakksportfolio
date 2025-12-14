@@ -21,7 +21,7 @@ export const products: Product[] = [
     {
         slug: "DesmoDestroyDash",
         name: "Desmo Destroy Dash",
-        genre: "PC",
+        genre: "iOS Android",
         concept: "なんでも食べちゃう古代の怪獣!",
         abstract: "",
         description: [],
@@ -45,7 +45,12 @@ export const products: Product[] = [
         description: [],
         icon: "",
         logo: "/images/products/Busible/icon.png",
-        images: ["/images/products/window.svg"],
+        images: [
+            "/images/products/Busible/Home.png",
+            "/images/products/Busible/Home2.png",
+            "/images/products/Busible/Schedule.png",
+            "/images/products/Busible/Settings.png",
+        ],
         techIcons: [],
     },
 ];

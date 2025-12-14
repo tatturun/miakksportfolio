@@ -45,10 +45,13 @@ export const members: Member[] = [
         avatarUrl: "/images/members/shun_osugi.png",
         color: "#f8b217",
         bio: "情報系大学3年生。",
-        skills: ["TypeScript", "Next.js", "Flutter", "Go", "Docker", "AWS"],
+        skills: ["Python", "FastAPI", "AIエージェント", "C#", "深層学習", "Unity", "Render", "Java", "TypeScript", "Next.js", "Flutter", "Docker", "firebase"],
         certifications: [
-            { date: "2023.05", name: "基本情報技術者試験 合格" },
-            { date: "2024.01", name: "AWS Certified Cloud Practitioner" },
+            { date: "2025.03", name: "Q-Quest2024 - 基礎学習プログラム 修了", url: "https://www.openbadge-global.com/api/v1.0/openBadge/v2/Wallet/Public/GetAssertionShare/ZDJkSnhXNWV4VitaTjIyQUw2T2ZYQT09" },
+            { date: "2025.03", name: "Q-Quest2024 - 事業創造プログラム 修了", url: "https://www.openbadge-global.com/api/v1.0/openBadge/v2/Wallet/Public/GetAssertionShare/TTAzMXpGRjNGQkdiN0dlcjVIenZIZz09" },
+            { date: "2025.05", name: "基本情報技術者試験 合格" },
+            { date: "2025.07", name: "Deep Learning 基礎講座 2025 Spring 修了", url: "https://drive.google.com/file/d/12ZK2UzPrVYaX4JGWh6Mg_eIiv8ucAixH/view?usp=sharing" },
+            { date: "2025.09", name: "GPS-Academic 思考力Sランク", url: "https://drive.google.com/file/d/1Knh8ZRglFCLWkwfT8NClaXFpi5S6nHla/view?usp=sharing" },
         ],
         socials: {
             github: "https://github.com/shun-osugi",
