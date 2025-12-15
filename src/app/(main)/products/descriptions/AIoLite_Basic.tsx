@@ -15,8 +15,8 @@ type Props = {
 
 export default function AIoLite_BasicDescription({ product }: Props) {
     return (
-        <div className="m-6">
-            <div className="flex flex-col items-center px-8 pb-4 gap-8 w-full">
+        <div className="m-0 md:m-6">
+            <div className="flex flex-col items-center px-4 md:px-8 pb-4 gap-8 w-full">
                 <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full">
                     <div className="w-full md:w-1/3 md:min-w-[500px]">
                         <ImageGallery product={product} />
@@ -35,7 +35,7 @@ export default function AIoLite_BasicDescription({ product }: Props) {
                         </div>
 
                         {/* プロダクト詳細カード部分 */}
-                        <div className="my-8 mr-8 flex flex-row items-start gap-3 min-h-[200px]">
+                        <div className="my-8 mr-0 md:mr-8 flex flex-row items-start gap-3 min-h-[200px]">
                             {/* キャラクター画像 */}
                             <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 relative rounded-full overflow-hidden self-start">
                                 <Image

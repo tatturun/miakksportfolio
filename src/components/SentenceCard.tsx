@@ -10,7 +10,7 @@ type SentenceCardProps = {
 
 export default function SentenceCard({ index, body, link }: SentenceCardProps) {
     return (
-        <div className="bg-white rounded-2xl shadow-lg p-6 flex-none w-full sm:w-96 snap-center">
+        <div className="bg-white rounded-2xl shadow-lg p-6 lg:flex-none w-full justify-center lg:w-80 snap-center">
             {/* 見出し */}
             <h3 className="text-xl font-bold text-slate-800 mb-2">{index}</h3>
             {/* 本文 */}

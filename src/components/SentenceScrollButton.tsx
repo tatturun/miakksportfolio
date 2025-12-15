@@ -96,7 +96,7 @@ export default function SentenceScrollButton({ children, className = "" }: Props
       {currentIndex > 0 && (
         <button
           onClick={handlePrev}
-          className="absolute top-1/2 left-0 transform -translate-y-1/2 z-10 bg-gray-200/90 shadow shadow-gray-400 rounded-full p-2"
+          className="absolute top-1/2 left-4 transform -translate-y-1/2 z-10 bg-gray-200/90 shadow shadow-gray-400 rounded-full p-2"
           aria-label="前の項目へ"
         >
           <FaChevronLeft size={20} />

@@ -15,15 +15,15 @@ type Props = {
 
 export default function JeturboDescription({ product }: Props) {
     return (
-        <div className="m-6">
-            <div className="flex flex-col items-center px-8 pb-4 gap-8 w-full">
-                <div className="flex flex-col md:flex-row items-start justify-center gap-8 w-full">
-                    <div className="w-full md:w-3/5 md:min-w-[300px]">
+        <div className="m-0 lg:m-6">
+            <div className="flex flex-col items-center px-4 lg:px-8 pb-4 gap-8 w-full">
+                <div className="flex flex-col lg:flex-row items-center justify-center gap-8 w-full">
+                    <div className="w-full">
                         <ImageGallery product={product} />
 
                         {product.demo && (
                             <div className="mt-4 w-5/6 mx-auto">
-                                <h3 className="text-lg font-bold text-slate-800 mb-3 text-center md:text-left">
+                                <h3 className="text-lg font-bold text-slate-800 mb-3 text-center lg:text-left">
                                     デモ動画
                                 </h3>
                                 
@@ -38,9 +38,9 @@ export default function JeturboDescription({ product }: Props) {
                     </div>
 
                     {/* パーテーション */}
-                    <div className="hidden md:block w-px bg-slate-100 self-stretch"></div>
+                    <div className="hidden lg:block w-px bg-slate-100 self-stretch"></div>
 
-                    <div className="flex flex-col md:overflow-y-auto md:h-[120vh] w-full md:w-2/5 custom-scrollbar">
+                    <div className="flex flex-col lg:overflow-y-auto lg:h-[120vh] w-full lg:w-min-100 custom-scrollbar">
                         <div className="flex flex-col w-full">
                             <ProductInfo product={product} />
 
@@ -50,21 +50,36 @@ export default function JeturboDescription({ product }: Props) {
                         </div>
 
                         {/* プロダクト詳細カード部分 */}
-                        <div className="m-8">
-                            <SentenceScrollButton>
+                        <div className="m-4 lg:m-8">
+                            {/* スマホ・タブレット用レイアウト: 縦並び */}
+                            <div className="flex flex-col gap-6 lg:hidden items-center">
                                 {(product.description ?? []).map((item) => (
-                                    <div
-                                        key={item.index}
-                                        className="snap-start shrink-0"
-                                    >
+                                    <div key={item.index} className="">
                                         <SentenceCard
-                                            key={item.index}
                                             index={item.index}
                                             body={item.body}
                                         />
                                     </div>
                                 ))}
-                            </SentenceScrollButton>
+                            </div>
+
+                            {/*  PC用レイアウト: 横スクロール */}
+                            <div className="hidden lg:block">
+                                <SentenceScrollButton>
+                                    {(product.description ?? []).map((item) => (
+                                        <div
+                                            key={item.index}
+                                            className="snap-start"
+                                        >
+                                            <SentenceCard
+                                                key={item.index}
+                                                index={item.index}
+                                                body={item.body}
+                                            />
+                                        </div>
+                                    ))}
+                                </SentenceScrollButton>
+                            </div>
                         </div>
                     </div>
                 </div>
