@@ -15,8 +15,8 @@ type Props = {
 
 export default function AIoLite_AdvanceDescription({ product }: Props) {
     return (
-        <div className="m-6">
-            <div className="flex flex-col items-center px-8 pb-4 gap-8 w-full">
+        <div className="m-0 md:m-6">
+            <div className="flex flex-col items-center px-4 md:px-8 pb-4 gap-8 w-full">
                 <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full">
                     <div className="w-full md:w-1/3 md:min-w-[500px]">
                         <ImageGallery product={product} />
@@ -25,17 +25,17 @@ export default function AIoLite_AdvanceDescription({ product }: Props) {
                     {/* パーテーション */}
                     <div className="hidden md:block w-px bg-slate-100 self-stretch"></div>
 
-                    <div className="flex flex-col md:overflow-y-auto overflow-x-hidden md:h-[80vh] w-full md:w-2/3 custom-scrollbar">
+                    <div className="flex flex-col md:overflow-y-auto overflow-x-hidden md:h-[80vh] w-full md:w-3/5 custom-scrollbar">
                         <div className="flex flex-col w-full">
                             <ProductInfo product={product} />
 
-                            <div className="flex flex-col w-full mx-6">
+                            <div className="flex flex-col w-full px-6 mt-4">
                                 <ProductAbstract product={product} />
                             </div>
                         </div>
 
                         {/* プロダクト詳細カード部分 */}
-                        <div className="my-8 mr-8 flex flex-row items-start gap-3 min-h-[200px]">
+                        <div className="my-8 mr-0 md:mr-8 flex flex-row items-start gap-3 min-h-[200px]">
                             {/* キャラクター画像 */}
                             <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 relative rounded-full overflow-hidden self-start">
                                 <Image

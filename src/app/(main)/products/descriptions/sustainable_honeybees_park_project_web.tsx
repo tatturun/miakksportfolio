@@ -32,20 +32,34 @@ export default function SustainableHoneybeesParkProjectWebDescription({ product 
                         <div className="lg:mt-auto text-center">
                             <hr className="my-10" />
                             <h2 className="text-2xl font-bold text-slate-800 mb-6">プロジェクトの詳細</h2>
-                            <SentenceScrollButton>
+                            {/* スマホ・タブレット用レイアウト: 縦並び */}
+                            <div className="flex flex-col gap-6 lg:hidden items-center">
                                 {(product.description ?? []).map((item) => (
-                                    <div
-                                        key={item.index}
-                                        className="snap-start shrink-0"
-                                    >
-                                    <HoneySentenceCard
-                                        key={item.index}
-                                        index={item.index}
-                                        body={item.body}
-                                    />
+                                    <div key={item.index} className="">
+                                        <HoneySentenceCard
+                                            index={item.index}
+                                            body={item.body}
+                                        />
                                     </div>
                                 ))}
-                            </SentenceScrollButton>
+                            </div>
+                            {/*  PC用レイアウト: 横スクロール */}
+                            <div className="hidden lg:block">
+                                <SentenceScrollButton>
+                                    {(product.description ?? []).map((item) => (
+                                        <div
+                                            key={item.index}
+                                            className="snap-start shrink-0"
+                                        >
+                                        <HoneySentenceCard
+                                            key={item.index}
+                                            index={item.index}
+                                            body={item.body}
+                                        />
+                                        </div>
+                                    ))}
+                                </SentenceScrollButton>
+                            </div>
                         </div>
                     </div>
                 </div>
