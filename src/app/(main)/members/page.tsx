@@ -2,6 +2,7 @@
 
 import { members } from "@/data/member";
 import MemberCard from "@/components/MemberCard";
+import LogoCard from "@/components/LogoCard";
 
 export default function MembersPage() {
     return (
@@ -9,7 +10,8 @@ export default function MembersPage() {
             {/* タイトル */}
             <h1 className="text-5xl font-bold text-center m-16">MEMBERS</h1>
 
-            <div className="flex flex-row flex-wrap justify-center items-center gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 md:gap-4 justify-center items-center w-3/5 mx-auto">
+                <LogoCard />
                 {members.map((member) => (
                     // カードコンポーネントを配置
                     <MemberCard key={member.slug} member={member} />
