@@ -6,14 +6,6 @@ import { FaInstagram } from "react-icons/fa6";
 import { NAV_LINKS } from "@/types/navigation";
 
 const Footer = () => {
-    // フッター専用のリンク順序を定義
-    const FOOTER_LINKS = [
-        NAV_LINKS[0], // Top (左上)
-        NAV_LINKS[2], // Products (左下)
-        NAV_LINKS[1], // MVV (右上)
-        NAV_LINKS[3], // Members (右下)
-    ];
-
     return (
         <footer className="py-12 px-4 bg-slate-50/70">
             <div className="container mx-auto text-center text-slate-800 flex justify-center items-center">
@@ -62,9 +54,9 @@ const Footer = () => {
                     {/* 縦棒 */}
                     <div className="h-36 w-px bg-slate-400 hidden md:block"></div>
 
-                    {/* 2×2 ボタン */}
-                    <div className="grid-cols-2 gap-2 hidden md:grid">
-                        {FOOTER_LINKS.map((link) => (
+                    {/* 3×2 ボタン */}
+                    <div className="grid-cols-3 gap-2 hidden md:grid">
+                        {NAV_LINKS.map((link) => (
                             <Link
                                 key={link.name}
                                 href={link.href}
