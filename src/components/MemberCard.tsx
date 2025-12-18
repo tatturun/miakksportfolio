@@ -15,10 +15,9 @@ export default function MemberCard({ member }: MemberCardProps) {
     return (
         <Link
             href={`/members/${member.slug}`}
-            className="block flex-1 w-full md:min-w-0 p-2 group"
+            className="block flex-1 w-full md:min-w-0 p-2 group focus:outline-none"
         >
             <div
-                // 修正: シングルクォートを削除し、テンプレートリテラルを正しく記述
                 className={`${styles.paracontainer} relative bg-slate-200 shadow-lg border-4 aspect-[3/5]`}
                 style={{ borderColor: borderColor }}
             >
