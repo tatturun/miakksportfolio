@@ -190,7 +190,47 @@ export const members: Member[] = [
         role: "広報",
         avatarUrl: "/images/members/m.png",
         color: "#e7336e",
-        bio: "",
-        skills: [],
+        bio: "Miakksの挑戦と成長をより多くの方に届けることを使命としています。チームが参加するイベントや開発の裏側を、InstagramやFacebookで発信中です。私たちの熱意と技術力が、見てくださる皆様に少しでも伝わるよう、日々試行錯誤しながら投稿を作成しています。",
+        skills: [
+            "Dart",
+            "Flutter",
+            "Python",
+            "C#",
+            "Unity",
+            "Java",
+            "HTML",
+            "CSS",
+            "TypeScript",
+            "Next.js",
+        ],
+        certifications: [
+            { date: "2024.10", name: "基本情報技術者試験 合格" },
+        ],
+        history: [
+            {
+                date: "2024.12",
+                title: "HACK U ○○大学 2024 「ココカエル」 学長賞",
+            },
+            {
+                date: "2025.03",
+                title: "Open Hack U 2025 OSAKA 「AIoLite」",
+            },
+            {
+                date: "2025.05",
+                title: "技育博 2025 Vol.2 「AIoLite」 サイバーエージェント賞 CARTA HOLDINGS賞",
+            },
+            {
+                date: "2025.09",
+                title: "技育CAMPキャラバン 「ジェッターボ」",
+            },
+            {
+                date: "2025.11",
+                title: "Re;Build in 愛知 2025 「AIoLite ベーシック/アドバンス」",
+            },
+            {
+                date: "2025.11",
+                title: "技育展 2025 「AIoLite アドバンス」 ウイングアーク1st賞",
+            },
+        ],
     },
 ];
